@@ -1,6 +1,13 @@
-const express = require("express");
-const app = express();
+/**
+ * Entry point: starts the HTTP server.
+ * Keep business logic inside /src.
+ */
+require("dotenv").config();
 
-app.get("/", (req, res) => res.send("Hello World from backend!"));
+const app = require("./src/app");
 
-app.listen(3000, () => console.log("Backend on http://localhost:3000"));
+const PORT = process.env.PORT || 3001;
+
+app.listen(PORT, () => {
+  console.log(`Backend running on http://localhost:${PORT}`);
+});
