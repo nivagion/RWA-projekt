@@ -37,9 +37,11 @@ Ako se pojavi Pull origin → prije pull-a provjeri imaš li local changes:
     Napomena: Desktop može držati jedan stash set u isto vrijeme. 
 
 2) ZA PREBACIT SVOJ KOD GORE
+
 Prije push-a
 Klikni Fetch origin
 Ako ima novih commitova: Pull origin
+commitati kod
 Tek onda Push origin 
 
 Ako dođe do konflikta
